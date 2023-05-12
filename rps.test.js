@@ -59,3 +59,12 @@ describe("rock, paper, scissors", () => {
     expect(result).toBe("left");
   });
 });
+
+describe("rock, paper, scissors", () => {
+    ["rock", "paper", "scissors"].forEach((both) => {
+      it(`should say draw for ${both} vs. ${both}`, () => {
+        expect(rps(both, both)).toBe("draw");
+      });
+    });
+  });
+  
