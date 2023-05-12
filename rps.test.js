@@ -1,12 +1,13 @@
-function rps() {
-  return "left";
-}
+function rps(left) {
+    return left === "rock" ? "left" : "right";
+  }
+  
 
 
 describe("rock, paper, scissors", () => {
-  it("should say left wins for scissors vs. rock", () => {
-    const left = "scissors";
-    const right = "rock";
+  it("should say left wins for rock vs scissors ", () => {
+    const left = "rock";
+    const right = "scissors";
   
     const result = rps(left, right);
   
