@@ -68,3 +68,11 @@ describe("rock, paper, scissors", () => {
     });
   });
   
+  describe("rock, paper, scissors", () => {
+    it("should throw an error if either input is invalid", () => {
+      expect(() => rps("bananas", "rock")).toThrowError("Invalid input: please provide 'rock', 'paper', or 'scissors'");
+      expect(() => rps("paper", "socks")).toThrowError("Invalid input: please provide 'rock', 'paper', or 'scissors'");
+      expect(() => rps("banana", "socks")).toThrowError("Invalid input: please provide 'rock', 'paper', or 'scissors'");
+    });
+  });
+  
