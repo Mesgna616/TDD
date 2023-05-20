@@ -7,6 +7,7 @@ function rps(left, right) {
   
     return left === right ? "draw" : left === "rock" && right === "scissors" || left === "paper" && right === "rock" || left === "scissors" && right === "paper" ? "left" : "right";
   }
-  
+  console.log(rps("scissors", "scissors"))
+
   
   module.exports = rps;
